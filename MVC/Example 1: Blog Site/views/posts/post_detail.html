@@ -1,0 +1,17 @@
+<!-- 
+Explanation:
+
+    This template displays the details of a single blog post, including its title and content. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ post['title'] }}</title>
+</head>
+<body>
+    <h1>{{ post['title'] }}</h1>
+    <p>{{ post['content'] }}</p>
+    <a href="{{ url_for('list_posts') }}">Back to Posts</a>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!-- 
+Explanation:
+
+    This template displays a list of blog post titles. Each title is a link to the post's detail page.
+    There is also a link to create a new post. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Posts</title>
+</head>
+<body>
+    <h1>Blog Posts</h1>
+    <ul>
+        {% for post in posts %}
+            <li>
+                <a href="{{ url_for('view_post', post_id=post['id']) }}">{{ post['title'] }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('new_post') }}">Create New Post</a>
+</body>
+</html>
