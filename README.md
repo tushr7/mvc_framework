@@ -30,10 +30,10 @@ When you click "Submit" after writing a new blog post, the Controller takes that
 
 Think of a simple web application where you can view, create, edit, and delete blog posts:
 
-## User Interaction: You type a new blog post and click "Submit" (View).
-## Controller Processing: The Controller receives this action, validates the data, and tells the Model to save it in the database.
-## Model Updates: The Model saves the new blog post in the database.
-## View Update: The Controller then updates the View to show the new blog post on the webpage.
+### User Interaction: You type a new blog post and click "Submit" (View).
+### Controller Processing: The Controller receives this action, validates the data, and tells the Model to save it in the database.
+### Model Updates: The Model saves the new blog post in the database.
+### View Update: The Controller then updates the View to show the new blog post on the webpage.
     
 # directory structure for blog webiste
 
